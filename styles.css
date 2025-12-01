@@ -1,3 +1,42 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body{
+  display: grid;
   padding: 25px;
+  background-color: rgb(18,18,18);
+  color: rgb(216,196,164);
+}
+
+textarea{
+  background-color: rgb(38,38,38);
+  color: rgb(216,196,164);
+}
+
+button{
+  background-color: rgb(50,50,50);
+  color: rgb(216,196,164);
+  cursor: pointer;
+} 
+
+#calcButton{
+  position: absolute;
+  top: 64%;
+  height: 50px;
+  width: 45%;
+}
+
+#clearButton{
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  height: 50px;
+  width: 45%;
+}
+
+#lower_opacity{
+  opacity: 0.5;  
 }
