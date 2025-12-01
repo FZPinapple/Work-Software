@@ -5,12 +5,16 @@
   </head>
   <body>
     <h1>Find Part Categories</h1>
-    <p>Enter Part Numbers (One per line, or comma separated):</p>
+    <p>
+      Enter Part Numbers (One per line, or comma separated)<br>
+      <span id="lower_opacity">(If the number contains "-000" do not type the "-". Ex: 1592700080)</span>
+    </p>
     
     <!--Input for part numbers-->
-    <textarea id="input" rows="5" cols="30"></textarea><br>
+    <textarea id="input" rows="5" cols="30" placeholder="Enter part numbers here..."></textarea><br>
     
-    <button onclick="calcCategory()">Search Multiple</button>
+    <button id="calcButton" onclick="calcCategory()">Search Multiple</button>
+    <button id="clearButton" onclick="clearTextArea()">Clear Text</button>
 
     <!--Search Results-->
     <h2>Results:</h2>
