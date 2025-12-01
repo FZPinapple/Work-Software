@@ -18,7 +18,7 @@ function findCategoryForPart(partNumber) {
 }
 
 function clearTextArea() {
-  input.textContent = "";
+  input.value = "";
 }
 
 function calcCategory() {
