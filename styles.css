@@ -4,39 +4,39 @@ html, body {
   padding: 0;
 }
 
-body{
-  display: grid;
+body {
+  display: flex;       
+  flex-direction: column; 
   padding: 25px;
-  background-color: rgb(18,18,18);
-  color: rgb(216,196,164);
+  background-color: rgb(18, 18, 18);
+  color: rgb(216, 196, 164);
 }
 
-textarea{
-  background-color: rgb(38,38,38);
-  color: rgb(216,196,164);
+textarea {
+  background-color: rgb(38, 38, 38);
+  color: rgb(216, 196, 164);
+  width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  resize: none;
+  margin-bottom: 10px; 
 }
 
-button{
-  background-color: rgb(50,50,50);
-  color: rgb(216,196,164);
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;           
+}
+
+button {
+  background-color: rgb(50, 50, 50);
+  color: rgb(216, 196, 164);
   cursor: pointer;
+  width: 200px;
+  height: 50px;
+  flex-grow: 1;
 } 
 
-#calcButton{
-  position: absolute;
-  top: 64%;
-  height: 50px;
-  width: 45%;
-}
-
-#clearButton{
-  position: absolute;
-  top: 64%;
-  left: 50%;
-  height: 50px;
-  width: 45%;
-}
-
-#lower_opacity{
-  opacity: 0.5;  
+#resultOutput {
+  white-space: pre-wrap;
 }
