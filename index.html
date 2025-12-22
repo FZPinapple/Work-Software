@@ -12,10 +12,10 @@
     
     <!--Input for part numbers-->
     <textarea id="input" rows="5" cols="30" placeholder="Enter part numbers here..."></textarea><br>
-    
-    <button id="calcButton" onclick="calcCategory()">Search Multiple</button>
-    <button id="clearButton" onclick="clearTextArea()">Clear Text</button>
-
+    <div id="button-container">
+      <button id="calcButton" onclick="calcCategory()">Search Multiple</button>
+      <button id="clearButton" onclick="clearTextArea()">Clear Text</button>
+    </div>
     <!--Search Results-->
     <h2>Results:</h2>
     <pre id="result-output"></pre>
